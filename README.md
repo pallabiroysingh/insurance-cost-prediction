@@ -116,4 +116,4 @@ streamlit run app.py
 
 ## Author
 
-Pallabi Roy Singh
+Pallabi S Roy
