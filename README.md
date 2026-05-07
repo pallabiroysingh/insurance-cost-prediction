@@ -6,7 +6,7 @@ Predicting health insurance premiums using individual health profiles and demogr
 
 Insurance companies need to move beyond broad actuarial tables toward individualized premium pricing. This project uses machine learning to predict insurance premiums based on personal health and demographic features, enabling more accurate and equitable pricing.
 
-**Target Metric:** R² Score — measuring how well the model explains premium variation across individuals.
+**Target Metric:** R² Score (measuring how well the model explains premium variation across individuals)
 
 ## Dataset
 
