@@ -101,7 +101,6 @@ The trained model is deployed as a Streamlit web application where users can inp
 - **Tableau Dashboard:** [Insurance Cost Prediction Dashboard](https://public.tableau.com/app/profile/pallabi.roy.singh/viz/InsuranceCostPrediction_17765428386570/DemographicInsights)
 - **Live App:** [Insurance Premium Predictor](https://insurance-cost-prediction-by-pallabi-roy-singh.streamlit.app)
 - **Technical Blog:** https://medium.com/@pallabiroysingh/predicting-insurance-premiums-with-machine-learning-a-complete-walkthrough-10e2f3e0fbf1 
-- **Demo Video:** https://www.loom.com/share/1688cd5fb66147189f140ac97375b048 
 
 ## How to Run
 
