@@ -40,7 +40,7 @@ Insurance companies need to move beyond broad actuarial tables toward individual
 
 ### 1. Exploratory Data Analysis
 
-- Premium distribution is multimodal with three peaks around 15,000, 23,000, and 28,000–29,000 — suggesting distinct premium tiers
+- Premium distribution is multimodal with three peaks around 15,000, 23,000, and 28,000–29,000 - suggesting distinct premium tiers
 - Age is the dominant factor: premiums nearly double from youngest group (16,212) to oldest (28,788)
 - AnyTransplants shows the largest premium gap among health conditions (+7,866)
 - KnownAllergies and Diabetes have negligible impact on premiums
@@ -49,7 +49,7 @@ Insurance companies need to move beyond broad actuarial tables toward individual
 
 - **T-tests:** 5 out of 6 health conditions showed statistically significant premium differences (p < 0.05). KnownAllergies was not significant (p = 0.704).
 - **ANOVA:** Number of surgeries significantly affects premiums (F = 26.14, p ≈ 0), with a clear staircase from 0 to 2 surgeries.
-- **Key insight:** Diabetes is statistically significant (p = 0.017) but the premium difference (+964) is practically negligible — less than 4% of the mean premium.
+- **Key insight:** Diabetes is statistically significant (p = 0.017) but the premium difference (+964) is practically negligible; less than 4% of the mean premium.
 
 ### 3. Machine Learning Modeling
 
@@ -76,8 +76,8 @@ Four models were trained and compared:
 
 - **SHAP Values:** Age shifts individual predictions by up to ±10,000. Transplant status always pushes predictions upward.
 - **Error Analysis:** Worst predictions occur at age extremes. Model is consistently off by ~2,200 for transplant patients.
-- **Learning Curves:** Mild overfitting (gap = 0.097). Validation curve still rising — more data would improve performance.
-- **Prediction Intervals:** 95% coverage achieved with average width of 5,455 — well-calibrated uncertainty estimates.
+- **Learning Curves:** Mild overfitting (gap = 0.097). Validation curve still rising; more data would improve performance.
+- **Prediction Intervals:** 95% coverage achieved with average width of 5,455 (well-calibrated uncertainty estimates).
 - **Business Impact:** Model reduces pricing error by 81% compared to using the average premium for everyone. For 10,000 policies, total pricing error drops by approximately 43 million.
 
 ### 5. Deployment
@@ -88,13 +88,13 @@ The trained model is deployed as a Streamlit web application where users can inp
 
 ## Key Insights and Recommendations
 
-1. **Age is the primary premium driver** — any pricing model that doesn't heavily weight age is likely underperforming
-2. **Transplant history** is the most impactful health condition (+7,866 premium increase), representing a distinct high-risk subgroup
-3. **Diabetes and allergies** have minimal impact — insurers using these as major pricing factors may be adding unnecessary complexity
-4. **Feature engineering doesn't always help** — BMI performed worse than raw Weight as a predictor
-5. **Statistical significance ≠ practical significance** — BloodPressureProblems was significant in testing but nearly useless in the model due to multicollinearity with Age
-6. **Collect more data** — learning curves show the model hasn't plateaued
-7. **Use prediction intervals** — communicate uncertainty (±2,700 average) instead of false single-point precision
+1. **Age is the primary premium driver:** Any pricing model that doesn't heavily weight age is likely underperforming
+2. **Transplant history:** It is the most impactful health condition (+7,866 premium increase), representing a distinct high-risk subgroup
+3. **Diabetes and allergies:** They have minimal impact; insurers using these as major pricing factors may be adding unnecessary complexity
+4. **Feature engineering doesn't always help:** BMI performed worse than raw Weight as a predictor
+5. **Statistical significance ≠ practical significance:** BloodPressureProblems was significant in testing but nearly useless in the model due to multicollinearity with Age
+6. **Collect more data:** Learning curves show that the model hasn't plateaued
+7. **Use prediction intervals:** Communicate uncertainty (±2,700 average) instead of false single-point precision
 
 ## Links
 
